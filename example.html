@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<title>A Simple Layout Webfont Example</title>
+		<style>
+
+		@font-face {
+			font-family: "Layout";
+			src: url("layout-webfont.eot?") format("eot"), url("layout-webfont.woff") format("woff"), url("layout-webfont.ttf") format("truetype");
+		}
+
+		html, .layout-webfont > * { font-family: serif; }
+
+		.layout-webfont { font-family: Layout; }
+
+		.inline-block { display: inline-block; *display: inline; *zoom: 1; }
+		.inline-block { background: #EEE; color: #444; padding: 1em; }
+
+		</style>
+	</head>
+	<body>
+
+		<h1>A Simple Layout Webfont Example</h1>
+
+		<div class="layout-webfont">
+			<div class="inline-block">This layout</div>
+			<div class="inline-block">is using the layout webfont</div>
+		</div>
+
+		<div>
+			<div class="inline-block">This layout</div>
+			<div class="inline-block">is not using the layout webfont</div>
+		</div>
+
+	</body>
+</html>
